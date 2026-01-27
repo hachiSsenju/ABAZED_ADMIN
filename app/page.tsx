@@ -77,7 +77,7 @@ export default function AuthPage() {
         }, 1000);
       }
     } catch (error) {
-      window.location.reload();
+      // window.location.reload();
       toast.error("Erreur lors de la connexion");
     } finally {
       setIsLoginLoading(false);
