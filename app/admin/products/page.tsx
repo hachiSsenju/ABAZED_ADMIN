@@ -37,7 +37,7 @@ export default function ProductsPage() {
       setIsLoading(true);
       try {
         const response = await ProduitsService.getAll();
-        setProducts(response);
+        setProducts(response.produits);
       } catch (error) {
         console.error("Error fetching products:", error);
       } finally {
